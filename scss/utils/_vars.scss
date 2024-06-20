@@ -1,0 +1,44 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --second-family: "Rubik", sans-serif;
+  --third-family: "Roboto", sans-serif;
+
+  --transition: 0.3s all ease-in-out;
+
+  --cover: #0b1019;
+  --c-text-white: #fff;
+  --c-border: #eee;
+
+  --color-accent: #d946ef;
+
+  --bg-color: #111827;
+  --accent-color: #181f2e;
+  --border-color: #292f3c;
+
+  --primary-text-color: #f9fafb;
+  --secondary-text-color: #e5e7eb;
+  --footer-text-color: rgba(255, 255, 255, 0.8);
+
+  --blue: #2563eb;
+
+  --main-btn-gradient: linear-gradient(
+    90.85deg,
+    rgb(37, 99, 235) 0.082%,
+    rgb(217, 70, 239) 201.664%
+  );
+  --title-gradient: linear-gradient(88deg, #2563eb 2%, #d946ef 50%);
+  --item-gradient: linear-gradient(
+    267.61deg,
+    rgba(254, 254, 255, 0.03) -10.891%,
+    rgba(255, 255, 255, 0.02) 104.767%
+  );
+
+  --white: #fff;
+  --black: #000;
+}

@@ -1,0 +1,83 @@
+.team {
+  margin-bottom: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 42rem;
+    margin-bottom: 30rem;
+
+    @include tablet {
+      font-size: 28rem;
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 16rem;
+    text-align: center;
+    line-height: 21rem;
+    max-width: 480rem;
+    margin-bottom: 40rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30rem;
+    grid-row-gap: 30rem;
+
+    @include desktop-small {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    @include mobile {
+      margin-top: 40rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+
+  &-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+    border-radius: 34rem;
+    border: 1rem solid var(--border-color);
+    box-shadow: 0rem 22rem 18rem 0rem rgba(0, 0, 0, 0.05);
+    background: var(--item-gradient);
+    transition: var(--transition);
+    padding: 32rem 36rem 35rem 36rem;
+  }
+
+  &-item:hover {
+    background: var(--border-color);
+  }
+
+  &-item__name {
+    font-weight: 500;
+    font-size: 28rem;
+    max-width: 155rem;
+    margin-top: -25rem;
+  }
+
+  &-item__position {
+    font-weight: 400;
+    font-size: 16rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 7rem;
+    margin-bottom: 11rem;
+    min-width: 200rem;
+  }
+  &__group__socials {
+    display: flex;
+    gap: 12rem;
+  }
+}

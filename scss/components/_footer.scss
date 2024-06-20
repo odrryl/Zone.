@@ -1,0 +1,155 @@
+.footer {
+  &__group {
+    display: flex;
+    margin-bottom: 32rem;
+    gap: 42rem;
+
+    @include tablet {
+      justify-content: center;
+    }
+
+    @include tablet-small {
+      flex-direction: column;
+      margin-left: 40rem;
+      gap: 65rem;
+    }
+  }
+  &__group-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+
+    @include tablet-small {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__logo {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 9rem;
+    align-items: center;
+  }
+  &__contact-item {
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 200%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__group-item {
+    display: flex;
+    flex-direction: column;
+    gap: 25rem;
+    justify-content: flex-start;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 18rem;
+
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.8);
+
+    @include tablet-small {
+      font-weight: 600;
+      font-size: 22rem;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 18rem;
+
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+  &__group__socials {
+    display: flex;
+    gap: 15rem;
+  }
+
+  &__group__socials-item {
+    transition: var(--transition);
+  }
+
+  &__group__socials-item:hover {
+    transform: scale(1.1);
+  }
+
+  &-policy {
+    padding-top: 36rem;
+    padding-bottom: 36rem;
+    border-top: 1rem solid rgba(150, 150, 150, 0.2);
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.8);
+
+    &__container {
+      display: flex;
+      align-items: center;
+
+      @include tablet {
+        flex-direction: column;
+        gap: 50rem;
+      }
+    }
+
+    &__copy {
+      margin-right: auto;
+
+      @include tablet {
+        margin-right: initial;
+      }
+    }
+
+    &__link {
+      margin-right: 53rem;
+      color: rgba(255, 255, 255, 0.8);
+
+      @include tablet {
+        margin-right: initial;
+      }
+
+      &:last-child {
+        margin-right: 39rem;
+
+        @include tablet {
+          margin-right: initial;
+        }
+      }
+    }
+  }
+}
+
+.item1 {
+  margin-left: 94rem;
+
+  @include tablet {
+    margin-left: 0;
+  }
+}
+.item2 {
+  margin-right: 55rem;
+
+  @include tablet {
+    margin-right: 0;
+  }
+}
+.item3 {
+  margin-right: 56rem;
+
+  @include tablet {
+    margin-right: 0;
+  }
+}

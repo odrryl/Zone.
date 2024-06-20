@@ -1,0 +1,108 @@
+.subscribe {
+  border-radius: 34rem;
+  padding: 50rem 155rem 38rem 155rem;
+  text-align: center;
+  background: var(--item-gradient);
+  border: 1rem solid var(--border-color);
+  box-shadow: 0px 22rem 18rem 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 98rem;
+
+  @include mobile {
+    padding: 25rem 77rem 19rem 77rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 42rem;
+    text-align: center;
+    transition: var(--transition);
+
+    @include tablet {
+      font-size: 28rem;
+    }
+  }
+
+  &__desc {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 187%;
+    text-align: center;
+    margin-top: 13rem;
+    margin-bottom: 29rem;
+  }
+  &-form {
+    border-radius: 70rem;
+    box-shadow: 10px 24px 54px 0 rgba(0, 0, 0, 0.07);
+    background: linear-gradient(
+      180deg,
+      rgba(254, 254, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.12) 100%
+    );
+
+    padding: 10rem 10rem 10rem 44rem;
+    display: flex;
+    gap: 10rem;
+    max-width: 860rem;
+    margin-inline: auto;
+  }
+  &-form__input {
+    width: 100%;
+    background: transparent;
+    font-family: var(--second-family);
+    border: 0;
+
+    font-weight: 400;
+    font-size: 18rem;
+    line-height: 167%;
+    color: var(--white);
+
+    &::placeholder {
+      color: var(--white);
+      opacity: 0.9;
+    }
+
+    @include mobile {
+      font-weight: 300;
+      font-size: 12rem;
+    }
+  }
+  &-form__btn {
+    border-radius: 70rem;
+    max-width: 196rem;
+
+    display: inline-flex;
+    align-items: center;
+
+    background: linear-gradient(
+      90.85deg,
+      rgb(37, 99, 235) 0.076%,
+      rgb(217, 70, 239) 201.678%
+    );
+    opacity: 0.9;
+
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 150%;
+    text-align: center;
+    color: var(--white);
+    padding: 15rem 49rem 15rem 26rem;
+    transition: var(--transition);
+
+    @include mobile {
+      padding: 10rem;
+    }
+  }
+
+  &-form__btn:hover {
+    transform: scale(1.03);
+  }
+  &-form__btn-text {
+    margin-left: 8rem;
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
